@@ -25,6 +25,7 @@ jobs:
             echo "ENV_NAME=prod" >> "$GITHUB_ENV"
             echo "DOCKER_TAG=prod" >> "$GITHUB_ENV"
             echo "DOCKER_LATEST=true" >> "$GITHUB_ENV"
+          fi
 
       - name: Set Release Version
         run: |
