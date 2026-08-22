@@ -54,6 +54,6 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            ${{ vars.DOCKER_REPO }}/${{ vars.DOCKER_PROJETO }}-${{ env.DOCKER_TAG }}:${{ env.RELEASE }}
+            ${{ vars.REGISTRY }}/${{ vars.DOCKER_REPO }}/${{ vars.DOCKER_PROJETO }}-${{ env.DOCKER_TAG }}:${{ env.RELEASE }}
           build-args: |
             OWNER=$${{ github.actor }}
